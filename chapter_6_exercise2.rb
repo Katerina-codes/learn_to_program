@@ -1,15 +1,16 @@
 def grandma_program
-year = rand(1930..1950)
 
 response = gets.chomp
 
   while response != "BYE"
     if response == response.upcase
-      puts "NO, NOT SINCE #{year}"
+      puts "NO, NOT SINCE #{rand(1930..1950)}"
       response = gets.chomp
-    else response == response.downcase
+    elsif response == response.downcase
       puts "HUH?!  SPEAK UP, SONNY!"
       response = gets.chomp
+    else
+      puts "SAY SOMETHING!"  
     end
   end
 
