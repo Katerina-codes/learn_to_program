@@ -8,8 +8,9 @@ year_range = (start_year..end_year).to_a
 leap_year = []
 
   year_range.each do |year|
-    if year.to_i / 4 == year.even? || year.to_i / 400 == year.even?
+     if (year % 4).even? || (year % 400).even?
       leap_year.push(year)
-      puts leap_year
     end
   end
+
+puts leap_year
