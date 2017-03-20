@@ -4,10 +4,12 @@ year = rand(1930..1950)
 response = gets.chomp
 
   while response != "BYE"
-    if response = response.upcase
+    if response == response.upcase
       puts "NO, NOT SINCE #{year}"
-    else response = response.downcase
+      response = gets.chomp
+    else response == response.downcase
       puts "HUH?!  SPEAK UP, SONNY!"
+      response = gets.chomp
     end
   end
 
