@@ -1,13 +1,16 @@
 class LeapyearFinder
 
-  puts "Enter your start year: "
-  year1 = gets.chomp.to_i
+  def get_start_year
+    puts "Enter your start year: "
+    year1 = gets.chomp.to_i
+  end
 
-  puts "Enter your start year: "
-  year2 = gets.chomp.to_i
+  def get_end_year
+    puts "Enter your start year: "
+    year2 = gets.chomp.to_i
+  end
 
   def get_leapyear(year1, year2)
-
     years = (year1..year2).to_a
     leapyear = []
 
@@ -19,8 +22,5 @@ class LeapyearFinder
   leapyear
   end
 
-
-   leapyears = LeapyearFinder.new.get_leapyear(year1, year2)
-   puts "The leapyears between #{year1} and #{year2} are #{leapyears}."
 
 end
