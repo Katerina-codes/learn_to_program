@@ -12,3 +12,5 @@ bottles = 99
     Go to the store and buy some more, 99 bottles of beer on the wall."""
   end
 end
+
+bottles_of_beer_left
