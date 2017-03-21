@@ -1,10 +1,10 @@
 class LeapyearFinder
 
   puts "Enter your start year: "
-  year1 = gets.chomp
+  year1 = gets.chomp.to_i
 
   puts "Enter your start year: "
-  year2 = gets.chomp
+  year2 = gets.chomp.to_i
 
   def get_leapyear(year1, year2)
 
